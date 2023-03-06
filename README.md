@@ -46,7 +46,7 @@ A behavior pattern is a pattern that defines how classes or objects should inter
 
 |Pattern|Document|Estimates|State|
 |---|:---:|---|:---:|
-|𝐎bserver|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||✅|
+|𝐎bserver|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)|1H|✅|
 |𝐂hain of Responsibility|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
 |𝐂ommand|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
 |𝐈nterpreter|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
