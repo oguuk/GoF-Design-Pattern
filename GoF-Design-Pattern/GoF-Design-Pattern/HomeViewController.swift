@@ -9,6 +9,8 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    let images = Observable<UIImage>()
+    let texts = Observable<String>()
     let factory = SymbolFactory()
     
     @IBOutlet weak var symbolImageView: UIImageView!
@@ -16,11 +18,15 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        images.addObserver(observer: symbolImageView)
+        texts.addObserver(observer: symbolLabel)
     }
     
     @IBAction func createButtonDidTap(_ sender: Any) {
         let type = SymbolType.allCases.randomElement()!
-        symbolImageView.image = factory.createSymbol(type: type)?.image
-        symbolLabel.text = factory.createSymbol(type: type)?.describe
+        images.notifyObservers(event: factory.createSymbol(type: type)?.image)
+        texts.notifyObservers(event: factory.createSymbol(type: type)?.describe)
     }
+    
+
 }

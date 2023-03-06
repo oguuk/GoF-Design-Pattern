@@ -19,6 +19,9 @@
 		96E5898F29B5BD0700131FCE /* Heart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5898E29B5BD0700131FCE /* Heart.swift */; };
 		96E5899129B5BE7F00131FCE /* BrokeHeart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5899029B5BE7F00131FCE /* BrokeHeart.swift */; };
 		96E5899329B5BF1F00131FCE /* SymbolFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5899229B5BF1F00131FCE /* SymbolFactory.swift */; };
+		96E5899529B5C69500131FCE /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5899429B5C69500131FCE /* Subject.swift */; };
+		96E5899729B5C6A100131FCE /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5899629B5C6A100131FCE /* Observer.swift */; };
+		96E5899929B5F15200131FCE /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5899829B5F15200131FCE /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		96E5898E29B5BD0700131FCE /* Heart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart.swift; sourceTree = "<group>"; };
 		96E5899029B5BE7F00131FCE /* BrokeHeart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokeHeart.swift; sourceTree = "<group>"; };
 		96E5899229B5BF1F00131FCE /* SymbolFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolFactory.swift; sourceTree = "<group>"; };
+		96E5899429B5C69500131FCE /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		96E5899629B5C6A100131FCE /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		96E5899829B5F15200131FCE /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,9 @@
 		96E5898929B5B1A700131FCE /* Observer */ = {
 			isa = PBXGroup;
 			children = (
+				96E5899429B5C69500131FCE /* Subject.swift */,
+				96E5899629B5C6A100131FCE /* Observer.swift */,
+				96E5899829B5F15200131FCE /* Extension.swift */,
 			);
 			path = Observer;
 			sourceTree = "<group>";
@@ -191,10 +200,13 @@
 				96E5898B29B5B1CD00131FCE /* HomeViewController.swift in Sources */,
 				96E5897529B5A05600131FCE /* ViewController.swift in Sources */,
 				96E5899129B5BE7F00131FCE /* BrokeHeart.swift in Sources */,
+				96E5899929B5F15200131FCE /* Extension.swift in Sources */,
 				96E5899329B5BF1F00131FCE /* SymbolFactory.swift in Sources */,
 				96E5898729B5A11700131FCE /* Singleton.swift in Sources */,
 				96E5898D29B5BC7A00131FCE /* Symbol.swift in Sources */,
+				96E5899529B5C69500131FCE /* Subject.swift in Sources */,
 				96E5897129B5A05600131FCE /* AppDelegate.swift in Sources */,
+				96E5899729B5C6A100131FCE /* Observer.swift in Sources */,
 				96E5898F29B5BD0700131FCE /* Heart.swift in Sources */,
 				96E5897329B5A05600131FCE /* SceneDelegate.swift in Sources */,
 			);
