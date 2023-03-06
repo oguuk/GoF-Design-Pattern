@@ -67,9 +67,6 @@
 				96E5897429B5A05600131FCE /* ViewController.swift */,
 				96E5898A29B5B1CD00131FCE /* HomeViewController.swift */,
 				96E5897629B5A05600131FCE /* Main.storyboard */,
-				96E5897929B5A05800131FCE /* Assets.xcassets */,
-				96E5897B29B5A05800131FCE /* LaunchScreen.storyboard */,
-				96E5897E29B5A05800131FCE /* Info.plist */,
 			);
 			path = "GoF-Design-Pattern";
 			sourceTree = "<group>";
@@ -77,6 +74,9 @@
 		96E5898429B5A0F700131FCE /* App */ = {
 			isa = PBXGroup;
 			children = (
+				96E5897929B5A05800131FCE /* Assets.xcassets */,
+				96E5897B29B5A05800131FCE /* LaunchScreen.storyboard */,
+				96E5897E29B5A05800131FCE /* Info.plist */,
 				96E5897029B5A05600131FCE /* AppDelegate.swift */,
 				96E5897229B5A05600131FCE /* SceneDelegate.swift */,
 			);
@@ -331,7 +331,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M79928L8PF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "GoF-Design-Pattern/Info.plist";
+				INFOPLIST_FILE = "GoF-Design-Pattern/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -359,7 +359,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M79928L8PF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "GoF-Design-Pattern/Info.plist";
+				INFOPLIST_FILE = "GoF-Design-Pattern/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

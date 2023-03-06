@@ -8,34 +8,27 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GoF_Design_Pattern" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="GoF_Design_Pattern" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID : GoF" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ffg-Uf-Ea3">
-                                <rect key="frame" x="60" y="364" width="294" height="34"/>
+                                <rect key="frame" x="30" y="382" width="354" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password : 1234" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oBJ-Ua-IK1">
-                                <rect key="frame" x="60" y="428" width="294" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="UXO-pK-sYV"/>
-                                </constraints>
+                                <rect key="frame" x="30" y="431" width="354" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idY-pk-g40">
-                                <rect key="frame" x="157" y="488" width="100" height="30"/>
+                                <rect key="frame" x="179.5" y="485" width="55" height="31"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Puf-by-vgb"/>
-                                    <constraint firstAttribute="height" constant="30" id="bAs-O9-vh2"/>
-                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="login"/>
                                 <connections>
@@ -47,15 +40,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="oBJ-Ua-IK1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0NO-PE-B60"/>
-                            <constraint firstItem="ffg-Uf-Ea3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="6xv-B3-nm3"/>
+                            <constraint firstItem="idY-pk-g40" firstAttribute="centerX" secondItem="oBJ-Ua-IK1" secondAttribute="centerX" id="8LQ-Tq-wgj"/>
+                            <constraint firstItem="oBJ-Ua-IK1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="99B-s8-XNz"/>
                             <constraint firstItem="ffg-Uf-Ea3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B6t-eB-RkW"/>
-                            <constraint firstItem="oBJ-Ua-IK1" firstAttribute="top" secondItem="ffg-Uf-Ea3" secondAttribute="bottom" constant="30" id="By1-a6-lM9"/>
-                            <constraint firstItem="oBJ-Ua-IK1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="CHX-11-gK6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ffg-Uf-Ea3" secondAttribute="trailing" constant="60" id="LnT-5a-Oqv"/>
-                            <constraint firstItem="idY-pk-g40" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UZQ-Fh-aed"/>
-                            <constraint firstItem="idY-pk-g40" firstAttribute="top" secondItem="oBJ-Ua-IK1" secondAttribute="bottom" constant="20" id="XvO-NQ-NdY"/>
+                            <constraint firstItem="oBJ-Ua-IK1" firstAttribute="top" secondItem="ffg-Uf-Ea3" secondAttribute="bottom" constant="15" id="By1-a6-lM9"/>
+                            <constraint firstItem="idY-pk-g40" firstAttribute="top" secondItem="oBJ-Ua-IK1" secondAttribute="bottom" constant="20" id="Tmn-zk-CHa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oBJ-Ua-IK1" secondAttribute="trailing" constant="30" id="V1X-vL-F6a"/>
                             <constraint firstItem="oBJ-Ua-IK1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aW2-nz-j1d"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oBJ-Ua-IK1" secondAttribute="trailing" constant="60" id="uOF-dP-pMF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ffg-Uf-Ea3" secondAttribute="trailing" constant="30" id="clo-Ls-VnD"/>
+                            <constraint firstItem="ffg-Uf-Ea3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="pUe-dC-aXZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SQB-tO-fPr"/>
