@@ -15,7 +15,7 @@ A creation pattern is a pattern related to the creation of an object. It is a wa
 |---|:---:|---|:---:|
 |𝐒ingleton|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)|0.5H|✅|
 |𝐅actory Method|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)|0.5H|✅|
-|Åbstract Factory|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
+|Åbstract Factory|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)|0.5H|✅|
 |𝐁uilder|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
 |𝐅actory Method|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
 |𝐏rototype|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
