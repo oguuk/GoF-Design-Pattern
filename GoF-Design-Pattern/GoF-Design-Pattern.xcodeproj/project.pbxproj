@@ -15,6 +15,10 @@
 		96E5897D29B5A05800131FCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E5897B29B5A05800131FCE /* LaunchScreen.storyboard */; };
 		96E5898729B5A11700131FCE /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5898629B5A11700131FCE /* Singleton.swift */; };
 		96E5898B29B5B1CD00131FCE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5898A29B5B1CD00131FCE /* HomeViewController.swift */; };
+		96E5898D29B5BC7A00131FCE /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5898C29B5BC7A00131FCE /* Symbol.swift */; };
+		96E5898F29B5BD0700131FCE /* Heart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5898E29B5BD0700131FCE /* Heart.swift */; };
+		96E5899129B5BE7F00131FCE /* BrokeHeart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5899029B5BE7F00131FCE /* BrokeHeart.swift */; };
+		96E5899329B5BF1F00131FCE /* SymbolFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5899229B5BF1F00131FCE /* SymbolFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		96E5897E29B5A05800131FCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96E5898629B5A11700131FCE /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		96E5898A29B5B1CD00131FCE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		96E5898C29B5BC7A00131FCE /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
+		96E5898E29B5BD0700131FCE /* Heart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart.swift; sourceTree = "<group>"; };
+		96E5899029B5BE7F00131FCE /* BrokeHeart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokeHeart.swift; sourceTree = "<group>"; };
+		96E5899229B5BF1F00131FCE /* SymbolFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,10 @@
 		96E5898829B5B18A00131FCE /* Factory Method */ = {
 			isa = PBXGroup;
 			children = (
+				96E5898C29B5BC7A00131FCE /* Symbol.swift */,
+				96E5898E29B5BD0700131FCE /* Heart.swift */,
+				96E5899029B5BE7F00131FCE /* BrokeHeart.swift */,
+				96E5899229B5BF1F00131FCE /* SymbolFactory.swift */,
 			);
 			path = "Factory Method";
 			sourceTree = "<group>";
@@ -178,8 +190,12 @@
 			files = (
 				96E5898B29B5B1CD00131FCE /* HomeViewController.swift in Sources */,
 				96E5897529B5A05600131FCE /* ViewController.swift in Sources */,
+				96E5899129B5BE7F00131FCE /* BrokeHeart.swift in Sources */,
+				96E5899329B5BF1F00131FCE /* SymbolFactory.swift in Sources */,
 				96E5898729B5A11700131FCE /* Singleton.swift in Sources */,
+				96E5898D29B5BC7A00131FCE /* Symbol.swift in Sources */,
 				96E5897129B5A05600131FCE /* AppDelegate.swift in Sources */,
+				96E5898F29B5BD0700131FCE /* Heart.swift in Sources */,
 				96E5897329B5A05600131FCE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
