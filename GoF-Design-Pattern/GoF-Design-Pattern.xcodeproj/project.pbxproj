@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96535B8F29B63F4200C19406 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96535B8E29B63F4200C19406 /* Artist.swift */; };
+		96535B9129B642B800C19406 /* FaceFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96535B9029B642B800C19406 /* FaceFeature.swift */; };
+		96535B9329B6434A00C19406 /* Man.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96535B9229B6434A00C19406 /* Man.swift */; };
+		96535B9529B6436300C19406 /* Woman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96535B9429B6436300C19406 /* Woman.swift */; };
+		96535B9729B645F600C19406 /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96535B9629B645F600C19406 /* AbstractFactory.swift */; };
+		96535B9929B647E900C19406 /* AbstractFactoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96535B9829B647E900C19406 /* AbstractFactoryViewController.swift */; };
 		96E5897129B5A05600131FCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5897029B5A05600131FCE /* AppDelegate.swift */; };
 		96E5897329B5A05600131FCE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5897229B5A05600131FCE /* SceneDelegate.swift */; };
 		96E5897529B5A05600131FCE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5897429B5A05600131FCE /* LoginViewController.swift */; };
@@ -27,6 +33,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		96535B8E29B63F4200C19406 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		96535B9029B642B800C19406 /* FaceFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceFeature.swift; sourceTree = "<group>"; };
+		96535B9229B6434A00C19406 /* Man.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Man.swift; sourceTree = "<group>"; };
+		96535B9429B6436300C19406 /* Woman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Woman.swift; sourceTree = "<group>"; };
+		96535B9629B645F600C19406 /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
+		96535B9829B647E900C19406 /* AbstractFactoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryViewController.swift; sourceTree = "<group>"; };
 		96E5896D29B5A05600131FCE /* GoF-Design-Pattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoF-Design-Pattern.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E5897029B5A05600131FCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96E5897229B5A05600131FCE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +71,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		96535B8D29B63DC500C19406 /* Abstract Factory */ = {
+			isa = PBXGroup;
+			children = (
+				96535B9829B647E900C19406 /* AbstractFactoryViewController.swift */,
+				96535B8E29B63F4200C19406 /* Artist.swift */,
+				96535B9029B642B800C19406 /* FaceFeature.swift */,
+				96535B9229B6434A00C19406 /* Man.swift */,
+				96535B9429B6436300C19406 /* Woman.swift */,
+				96535B9629B645F600C19406 /* AbstractFactory.swift */,
+			);
+			path = "Abstract Factory";
+			sourceTree = "<group>";
+		};
 		96E5896429B5A05600131FCE = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +103,7 @@
 		96E5896F29B5A05600131FCE /* GoF-Design-Pattern */ = {
 			isa = PBXGroup;
 			children = (
+				96535B8D29B63DC500C19406 /* Abstract Factory */,
 				96E5898929B5B1A700131FCE /* Observer */,
 				96E5898829B5B18A00131FCE /* Factory Method */,
 				96E5898529B5A10300131FCE /* Singleton */,
@@ -228,17 +254,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				96E5898B29B5B1CD00131FCE /* ObserverViewController.swift in Sources */,
+				96535B9329B6434A00C19406 /* Man.swift in Sources */,
+				96535B9529B6436300C19406 /* Woman.swift in Sources */,
 				96E5897529B5A05600131FCE /* LoginViewController.swift in Sources */,
 				96E5899D29B5FDC200131FCE /* MenuTableViewCell.swift in Sources */,
 				96E5899129B5BE7F00131FCE /* BrokeHeart.swift in Sources */,
+				96535B9729B645F600C19406 /* AbstractFactory.swift in Sources */,
 				96E5899929B5F15200131FCE /* Extension.swift in Sources */,
 				96E5899329B5BF1F00131FCE /* SymbolFactory.swift in Sources */,
 				96E5898729B5A11700131FCE /* Singleton.swift in Sources */,
 				96E5898D29B5BC7A00131FCE /* Symbol.swift in Sources */,
 				96E5899B29B5F9F300131FCE /* MenuViewController.swift in Sources */,
 				96E5899529B5C69500131FCE /* Subject.swift in Sources */,
+				96535B9929B647E900C19406 /* AbstractFactoryViewController.swift in Sources */,
 				96E5897129B5A05600131FCE /* AppDelegate.swift in Sources */,
+				96535B9129B642B800C19406 /* FaceFeature.swift in Sources */,
 				96E5899729B5C6A100131FCE /* Observer.swift in Sources */,
+				96535B8F29B63F4200C19406 /* Artist.swift in Sources */,
 				96E5898F29B5BD0700131FCE /* Heart.swift in Sources */,
 				96E5897329B5A05600131FCE /* SceneDelegate.swift in Sources */,
 			);
