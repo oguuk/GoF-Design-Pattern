@@ -46,13 +46,13 @@ A behavior pattern is a pattern that defines how classes or objects should inter
 
 |Pattern|Document|Estimates|State|
 |---|:---:|---|:---:|
+|𝐎bserver|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||✅|
 |𝐂hain of Responsibility|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
 |𝐂ommand|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
 |𝐈nterpreter|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
 |𝐈terator|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
 |𝐌ediator|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
 |𝐌emento|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
-|𝐎bserver|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
 |𝐒tate|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
 |𝐒trategy|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
 |𝐓emplate Method|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
