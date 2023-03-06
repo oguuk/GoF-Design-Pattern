@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  ObserverViewController.swift
 //  GoF-Design-Pattern
 //
 //  Created by 오국원 on 2023/03/06.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class ObserverViewController: UIViewController {
     
     let images = Observable<UIImage>()
     let texts = Observable<String>()

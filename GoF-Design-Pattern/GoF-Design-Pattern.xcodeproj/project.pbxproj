@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		96E5897129B5A05600131FCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5897029B5A05600131FCE /* AppDelegate.swift */; };
 		96E5897329B5A05600131FCE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5897229B5A05600131FCE /* SceneDelegate.swift */; };
-		96E5897529B5A05600131FCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5897429B5A05600131FCE /* ViewController.swift */; };
+		96E5897529B5A05600131FCE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5897429B5A05600131FCE /* LoginViewController.swift */; };
 		96E5897829B5A05600131FCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E5897629B5A05600131FCE /* Main.storyboard */; };
 		96E5897A29B5A05800131FCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96E5897929B5A05800131FCE /* Assets.xcassets */; };
 		96E5897D29B5A05800131FCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E5897B29B5A05800131FCE /* LaunchScreen.storyboard */; };
 		96E5898729B5A11700131FCE /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5898629B5A11700131FCE /* Singleton.swift */; };
-		96E5898B29B5B1CD00131FCE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5898A29B5B1CD00131FCE /* HomeViewController.swift */; };
+		96E5898B29B5B1CD00131FCE /* ObserverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5898A29B5B1CD00131FCE /* ObserverViewController.swift */; };
 		96E5898D29B5BC7A00131FCE /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5898C29B5BC7A00131FCE /* Symbol.swift */; };
 		96E5898F29B5BD0700131FCE /* Heart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5898E29B5BD0700131FCE /* Heart.swift */; };
 		96E5899129B5BE7F00131FCE /* BrokeHeart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5899029B5BE7F00131FCE /* BrokeHeart.swift */; };
@@ -22,19 +22,21 @@
 		96E5899529B5C69500131FCE /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5899429B5C69500131FCE /* Subject.swift */; };
 		96E5899729B5C6A100131FCE /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5899629B5C6A100131FCE /* Observer.swift */; };
 		96E5899929B5F15200131FCE /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5899829B5F15200131FCE /* Extension.swift */; };
+		96E5899B29B5F9F300131FCE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5899A29B5F9F300131FCE /* MenuViewController.swift */; };
+		96E5899D29B5FDC200131FCE /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5899C29B5FDC200131FCE /* MenuTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		96E5896D29B5A05600131FCE /* GoF-Design-Pattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoF-Design-Pattern.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E5897029B5A05600131FCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96E5897229B5A05600131FCE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		96E5897429B5A05600131FCE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		96E5897429B5A05600131FCE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		96E5897729B5A05600131FCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96E5897929B5A05800131FCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96E5897C29B5A05800131FCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96E5897E29B5A05800131FCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96E5898629B5A11700131FCE /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
-		96E5898A29B5B1CD00131FCE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		96E5898A29B5B1CD00131FCE /* ObserverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverViewController.swift; sourceTree = "<group>"; };
 		96E5898C29B5BC7A00131FCE /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
 		96E5898E29B5BD0700131FCE /* Heart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart.swift; sourceTree = "<group>"; };
 		96E5899029B5BE7F00131FCE /* BrokeHeart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokeHeart.swift; sourceTree = "<group>"; };
@@ -42,6 +44,8 @@
 		96E5899429B5C69500131FCE /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 		96E5899629B5C6A100131FCE /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		96E5899829B5F15200131FCE /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		96E5899A29B5F9F300131FCE /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		96E5899C29B5FDC200131FCE /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +82,7 @@
 				96E5898829B5B18A00131FCE /* Factory Method */,
 				96E5898529B5A10300131FCE /* Singleton */,
 				96E5898429B5A0F700131FCE /* App */,
-				96E5897429B5A05600131FCE /* ViewController.swift */,
-				96E5898A29B5B1CD00131FCE /* HomeViewController.swift */,
+				96E589A029B6099400131FCE /* ViewController */,
 				96E5897629B5A05600131FCE /* Main.storyboard */,
 			);
 			path = "GoF-Design-Pattern";
@@ -119,11 +122,38 @@
 		96E5898929B5B1A700131FCE /* Observer */ = {
 			isa = PBXGroup;
 			children = (
+				96E5898A29B5B1CD00131FCE /* ObserverViewController.swift */,
 				96E5899429B5C69500131FCE /* Subject.swift */,
 				96E5899629B5C6A100131FCE /* Observer.swift */,
 				96E5899829B5F15200131FCE /* Extension.swift */,
 			);
 			path = Observer;
+			sourceTree = "<group>";
+		};
+		96E589A029B6099400131FCE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				96E589A229B609AA00131FCE /* Menu */,
+				96E589A129B609A600131FCE /* Login */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		96E589A129B609A600131FCE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				96E5897429B5A05600131FCE /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		96E589A229B609AA00131FCE /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				96E5899C29B5FDC200131FCE /* MenuTableViewCell.swift */,
+				96E5899A29B5F9F300131FCE /* MenuViewController.swift */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,13 +227,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96E5898B29B5B1CD00131FCE /* HomeViewController.swift in Sources */,
-				96E5897529B5A05600131FCE /* ViewController.swift in Sources */,
+				96E5898B29B5B1CD00131FCE /* ObserverViewController.swift in Sources */,
+				96E5897529B5A05600131FCE /* LoginViewController.swift in Sources */,
+				96E5899D29B5FDC200131FCE /* MenuTableViewCell.swift in Sources */,
 				96E5899129B5BE7F00131FCE /* BrokeHeart.swift in Sources */,
 				96E5899929B5F15200131FCE /* Extension.swift in Sources */,
 				96E5899329B5BF1F00131FCE /* SymbolFactory.swift in Sources */,
 				96E5898729B5A11700131FCE /* Singleton.swift in Sources */,
 				96E5898D29B5BC7A00131FCE /* Symbol.swift in Sources */,
+				96E5899B29B5F9F300131FCE /* MenuViewController.swift in Sources */,
 				96E5899529B5C69500131FCE /* Subject.swift in Sources */,
 				96E5897129B5A05600131FCE /* AppDelegate.swift in Sources */,
 				96E5899729B5C6A100131FCE /* Observer.swift in Sources */,
