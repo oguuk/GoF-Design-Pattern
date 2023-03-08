@@ -17,7 +17,6 @@ A creation pattern is a pattern related to the creation of an object. It is a wa
 |𝐅actory Method|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)|0.5H|✅|
 |Åbstract Factory|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)|0.5H|✅|
 |𝐁uilder|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
-|𝐅actory Method|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
 |𝐏rototype|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
 
 <br/><br/>
@@ -54,7 +53,7 @@ A behavior pattern is a pattern that defines how classes or objects should inter
 |𝐌ediator|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
 |𝐌emento|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
 |𝐒tate|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
-|𝐒trategy|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
+|𝐒trategy|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)|0.5H|✅|
 |𝐓emplate Method|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
 |𝐕isitor|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
 
