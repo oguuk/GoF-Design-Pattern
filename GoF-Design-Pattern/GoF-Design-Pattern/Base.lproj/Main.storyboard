@@ -239,6 +239,75 @@
             </objects>
             <point key="canvasLocation" x="244.92753623188409" y="632.8125"/>
         </scene>
+        <!--Strategy View Controller-->
+        <scene sceneID="HfP-io-U9B">
+            <objects>
+                <viewController storyboardIdentifier="Strategy" id="Ii9-hS-8bq" customClass="StrategyViewController" customModule="GoF_Design_Pattern" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pAX-9b-HC3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="생년월일 ex) 2000-12-12" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Csv-Y6-YNi">
+                                <rect key="frame" x="107" y="431" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="hlR-GR-wvc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="aaa:" destination="Ii9-hS-8bq" eventType="editingChanged" id="KeH-al-Ks2"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="국제나이" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="335-ts-5Yx">
+                                <rect key="frame" x="107" y="495" width="52" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="한국나이" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHJ-9I-O0S">
+                                <rect key="frame" x="255" y="495" width="52" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECy-oD-DSd">
+                                <rect key="frame" x="299" y="533" width="8" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="tintColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yaC-QN-rLH">
+                                <rect key="frame" x="107" y="533" width="8" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="tintColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wxO-HY-mla"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yaC-QN-rLH" firstAttribute="leading" secondItem="335-ts-5Yx" secondAttribute="leading" id="ELh-OR-9l0"/>
+                            <constraint firstItem="wHJ-9I-O0S" firstAttribute="trailing" secondItem="Csv-Y6-YNi" secondAttribute="trailing" id="GPb-nq-E1q"/>
+                            <constraint firstItem="335-ts-5Yx" firstAttribute="leading" secondItem="Csv-Y6-YNi" secondAttribute="leading" id="La5-A0-mBh"/>
+                            <constraint firstItem="wHJ-9I-O0S" firstAttribute="top" secondItem="Csv-Y6-YNi" secondAttribute="bottom" constant="30" id="NhG-Fe-ZPT"/>
+                            <constraint firstItem="ECy-oD-DSd" firstAttribute="top" secondItem="wHJ-9I-O0S" secondAttribute="bottom" constant="20" id="TXh-Dv-wdX"/>
+                            <constraint firstItem="Csv-Y6-YNi" firstAttribute="centerX" secondItem="pAX-9b-HC3" secondAttribute="centerX" id="Tqx-Qi-kbZ"/>
+                            <constraint firstItem="335-ts-5Yx" firstAttribute="top" secondItem="Csv-Y6-YNi" secondAttribute="bottom" constant="30" id="XG6-Ly-pBf"/>
+                            <constraint firstItem="ECy-oD-DSd" firstAttribute="trailing" secondItem="wHJ-9I-O0S" secondAttribute="trailing" id="Z9M-Gw-p8j"/>
+                            <constraint firstItem="Csv-Y6-YNi" firstAttribute="centerY" secondItem="pAX-9b-HC3" secondAttribute="centerY" id="ikN-3w-lxF"/>
+                            <constraint firstItem="yaC-QN-rLH" firstAttribute="top" secondItem="335-ts-5Yx" secondAttribute="bottom" constant="20" id="yv1-sh-1Gb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="birthTextField" destination="Csv-Y6-YNi" id="xmx-7n-Q0p"/>
+                        <outlet property="internationalAge" destination="yaC-QN-rLH" id="yqG-XP-alb"/>
+                        <outlet property="koreaAge" destination="ECy-oD-DSd" id="3kk-4i-qXZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pvn-vz-Ctk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="989.85507246376824" y="637.5"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="hwY-rH-sm1">
             <objects>
@@ -261,6 +330,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
