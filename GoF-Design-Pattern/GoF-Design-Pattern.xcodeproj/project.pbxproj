@@ -18,6 +18,11 @@
 		967A562A29BB606100CC43A2 /* PrototypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A562929BB606100CC43A2 /* PrototypeViewController.swift */; };
 		96C7702829BEB24B000A276C /* Adaptee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C7702729BEB24B000A276C /* Adaptee.swift */; };
 		96C7702A29BEB3B4000A276C /* AdapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C7702929BEB3B4000A276C /* AdapterViewController.swift */; };
+		96C7702D29BECA4A000A276C /* Ink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C7702C29BECA4A000A276C /* Ink.swift */; };
+		96C7702F29BECCA4000A276C /* Pen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C7702E29BECCA4000A276C /* Pen.swift */; };
+		96C7703129BECCE7000A276C /* HI-TEC-C.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C7703029BECCE7000A276C /* HI-TEC-C.swift */; };
+		96C7703329BECD2D000A276C /* Zebra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C7703229BECD2D000A276C /* Zebra.swift */; };
+		96C7703529BECE75000A276C /* BridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C7703429BECE75000A276C /* BridgeViewController.swift */; };
 		96E5897129B5A05600131FCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5897029B5A05600131FCE /* AppDelegate.swift */; };
 		96E5897329B5A05600131FCE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5897229B5A05600131FCE /* SceneDelegate.swift */; };
 		96E5897529B5A05600131FCE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5897429B5A05600131FCE /* LoginViewController.swift */; };
@@ -59,6 +64,11 @@
 		967A562929BB606100CC43A2 /* PrototypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypeViewController.swift; sourceTree = "<group>"; };
 		96C7702729BEB24B000A276C /* Adaptee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adaptee.swift; sourceTree = "<group>"; };
 		96C7702929BEB3B4000A276C /* AdapterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterViewController.swift; sourceTree = "<group>"; };
+		96C7702C29BECA4A000A276C /* Ink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ink.swift; sourceTree = "<group>"; };
+		96C7702E29BECCA4000A276C /* Pen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pen.swift; sourceTree = "<group>"; };
+		96C7703029BECCE7000A276C /* HI-TEC-C.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HI-TEC-C.swift"; sourceTree = "<group>"; };
+		96C7703229BECD2D000A276C /* Zebra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zebra.swift; sourceTree = "<group>"; };
+		96C7703429BECE75000A276C /* BridgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeViewController.swift; sourceTree = "<group>"; };
 		96E5896D29B5A05600131FCE /* GoF-Design-Pattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoF-Design-Pattern.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E5897029B5A05600131FCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96E5897229B5A05600131FCE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +132,18 @@
 				967A562929BB606100CC43A2 /* PrototypeViewController.swift */,
 			);
 			path = Prototype;
+			sourceTree = "<group>";
+		};
+		96C7702B29BEC96D000A276C /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				96C7702C29BECA4A000A276C /* Ink.swift */,
+				96C7702E29BECCA4000A276C /* Pen.swift */,
+				96C7703029BECCE7000A276C /* HI-TEC-C.swift */,
+				96C7703229BECD2D000A276C /* Zebra.swift */,
+				96C7703429BECE75000A276C /* BridgeViewController.swift */,
+			);
+			path = Bridge;
 			sourceTree = "<group>";
 		};
 		96D55C9329B753E300997A57 /* Strategy */ = {
@@ -257,6 +279,7 @@
 		96F3DC5329BE296A00874650 /* Structural */ = {
 			isa = PBXGroup;
 			children = (
+				96C7702B29BEC96D000A276C /* Bridge */,
 				96F3DC5229BE295900874650 /* Adapter */,
 			);
 			path = Structural;
@@ -355,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96E5898B29B5B1CD00131FCE /* ObserverViewController.swift in Sources */,
+				96C7703529BECE75000A276C /* BridgeViewController.swift in Sources */,
 				96535B9329B6434A00C19406 /* Man.swift in Sources */,
 				96535B9529B6436300C19406 /* Woman.swift in Sources */,
 				96E5897529B5A05600131FCE /* LoginViewController.swift in Sources */,
@@ -363,12 +387,15 @@
 				96ECE34A29B83391004A1235 /* KoreanAge.swift in Sources */,
 				96ECE34829B83387004A1235 /* InternationalAge.swift in Sources */,
 				96535B9729B645F600C19406 /* AbstractFactory.swift in Sources */,
+				96C7703129BECCE7000A276C /* HI-TEC-C.swift in Sources */,
 				96E5899929B5F15200131FCE /* Extension.swift in Sources */,
 				96E5899329B5BF1F00131FCE /* SymbolFactory.swift in Sources */,
 				96E5898729B5A11700131FCE /* Singleton.swift in Sources */,
 				96ECE35329B88966004A1235 /* BuilderViewController.swift in Sources */,
 				967A562A29BB606100CC43A2 /* PrototypeViewController.swift in Sources */,
+				96C7702D29BECA4A000A276C /* Ink.swift in Sources */,
 				96E5898D29B5BC7A00131FCE /* Symbol.swift in Sources */,
+				96C7702F29BECCA4000A276C /* Pen.swift in Sources */,
 				96ECE35729B897AA004A1235 /* House.swift in Sources */,
 				96ECE34C29B84125004A1235 /* AgeCalculator.swift in Sources */,
 				96E5899B29B5F9F300131FCE /* MenuViewController.swift in Sources */,
@@ -381,6 +408,7 @@
 				96ECE34E29B8446D004A1235 /* StrategyViewController.swift in Sources */,
 				96535B9129B642B800C19406 /* FaceFeature.swift in Sources */,
 				96ECE35929B899B0004A1235 /* HouseBuilder.swift in Sources */,
+				96C7703329BECD2D000A276C /* Zebra.swift in Sources */,
 				96E5899729B5C6A100131FCE /* Observer.swift in Sources */,
 				96ECE34029B82A3A004A1235 /* Strategy.swift in Sources */,
 				96ECE35529B88C56004A1235 /* Builder.swift in Sources */,
