@@ -25,6 +25,9 @@
 		96C7703529BECE75000A276C /* BridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C7703429BECE75000A276C /* BridgeViewController.swift */; };
 		96C7703929BEDB72000A276C /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C7703829BEDB72000A276C /* Downloader.swift */; };
 		96C7703D29BF00A5000A276C /* FacadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C7703C29BF00A5000A276C /* FacadeViewController.swift */; };
+		96C7704229BF1299000A276C /* FlyweightClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C7704129BF1299000A276C /* FlyweightClass.swift */; };
+		96C7704429BF1F98000A276C /* FlyweightFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C7704329BF1F98000A276C /* FlyweightFactory.swift */; };
+		96C7704729BF2064000A276C /* FlyweightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C7704629BF2064000A276C /* FlyweightViewController.swift */; };
 		96E5897129B5A05600131FCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5897029B5A05600131FCE /* AppDelegate.swift */; };
 		96E5897329B5A05600131FCE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5897229B5A05600131FCE /* SceneDelegate.swift */; };
 		96E5897529B5A05600131FCE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5897429B5A05600131FCE /* LoginViewController.swift */; };
@@ -73,6 +76,9 @@
 		96C7703429BECE75000A276C /* BridgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeViewController.swift; sourceTree = "<group>"; };
 		96C7703829BEDB72000A276C /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
 		96C7703C29BF00A5000A276C /* FacadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacadeViewController.swift; sourceTree = "<group>"; };
+		96C7704129BF1299000A276C /* FlyweightClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyweightClass.swift; sourceTree = "<group>"; };
+		96C7704329BF1F98000A276C /* FlyweightFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyweightFactory.swift; sourceTree = "<group>"; };
+		96C7704629BF2064000A276C /* FlyweightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyweightViewController.swift; sourceTree = "<group>"; };
 		96E5896D29B5A05600131FCE /* GoF-Design-Pattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoF-Design-Pattern.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E5897029B5A05600131FCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96E5897229B5A05600131FCE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +170,30 @@
 				96C7703C29BF00A5000A276C /* FacadeViewController.swift */,
 			);
 			path = Facade;
+			sourceTree = "<group>";
+		};
+		96C7703E29BF0FC1000A276C /* Flyweight */ = {
+			isa = PBXGroup;
+			children = (
+				96C7704129BF1299000A276C /* FlyweightClass.swift */,
+				96C7704329BF1F98000A276C /* FlyweightFactory.swift */,
+				96C7704629BF2064000A276C /* FlyweightViewController.swift */,
+			);
+			path = Flyweight;
+			sourceTree = "<group>";
+		};
+		96C7703F29BF0FD1000A276C /* ProtectionProxy */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ProtectionProxy;
+			sourceTree = "<group>";
+		};
+		96C7704029BF0FDB000A276C /* VirtualProxy */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VirtualProxy;
 			sourceTree = "<group>";
 		};
 		96D55C9329B753E300997A57 /* Strategy */ = {
@@ -299,6 +329,9 @@
 		96F3DC5329BE296A00874650 /* Structural */ = {
 			isa = PBXGroup;
 			children = (
+				96C7704029BF0FDB000A276C /* VirtualProxy */,
+				96C7703F29BF0FD1000A276C /* ProtectionProxy */,
+				96C7703E29BF0FC1000A276C /* Flyweight */,
 				96C7703729BEDB51000A276C /* Facade */,
 				96C7703629BED9FF000A276C /* Composite */,
 				96C7702B29BEC96D000A276C /* Bridge */,
@@ -400,6 +433,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96E5898B29B5B1CD00131FCE /* ObserverViewController.swift in Sources */,
+				96C7704229BF1299000A276C /* FlyweightClass.swift in Sources */,
 				96C7703529BECE75000A276C /* BridgeViewController.swift in Sources */,
 				96535B9329B6434A00C19406 /* Man.swift in Sources */,
 				96535B9529B6436300C19406 /* Woman.swift in Sources */,
@@ -414,6 +448,7 @@
 				96E5899329B5BF1F00131FCE /* SymbolFactory.swift in Sources */,
 				96E5898729B5A11700131FCE /* Singleton.swift in Sources */,
 				96C7703D29BF00A5000A276C /* FacadeViewController.swift in Sources */,
+				96C7704429BF1F98000A276C /* FlyweightFactory.swift in Sources */,
 				96ECE35329B88966004A1235 /* BuilderViewController.swift in Sources */,
 				967A562A29BB606100CC43A2 /* PrototypeViewController.swift in Sources */,
 				96C7702D29BECA4A000A276C /* Ink.swift in Sources */,
@@ -440,6 +475,7 @@
 				967A562629BB375400CC43A2 /* Prototype.swift in Sources */,
 				96535B8F29B63F4200C19406 /* Artist.swift in Sources */,
 				96E5898F29B5BD0700131FCE /* Heart.swift in Sources */,
+				96C7704729BF2064000A276C /* FlyweightViewController.swift in Sources */,
 				96E5897329B5A05600131FCE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
