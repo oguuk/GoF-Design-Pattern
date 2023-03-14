@@ -73,14 +73,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="menuCell" id="Ia6-Nf-Eta" customClass="MenuTableViewCell" customModule="GoF_Design_Pattern" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="50" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="50" width="414" height="43"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ia6-Nf-Eta" id="eQQ-9V-J8E">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmL-Ro-3hW">
-                                            <rect key="frame" x="20" y="11" width="42" height="22"/>
+                                            <rect key="frame" x="20" y="11" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -381,6 +381,84 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kss-Zr-Vo1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1825" y="1463"/>
+        </scene>
+        <!--Iterator View Controller-->
+        <scene sceneID="UsX-vI-Wkk">
+            <objects>
+                <viewController storyboardIdentifier="Iterator" id="juV-4a-Kud" customClass="IteratorViewController" customModule="GoF_Design_Pattern" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HZ9-0j-EiH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="[0, 1, 2, 5]" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="18j-zV-47o">
+                                <rect key="frame" x="157" y="578" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="E8K-qi-K2a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNF-5t-cnJ">
+                                <rect key="frame" x="20" y="577.5" width="58" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="prev"/>
+                                <connections>
+                                    <action selector="prevButtonDidTap:" destination="juV-4a-Kud" eventType="touchUpInside" id="YQL-4B-z6v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JqR-nx-hSz">
+                                <rect key="frame" x="337" y="577.5" width="57" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="next"/>
+                                <connections>
+                                    <action selector="nextButtonDidtap:" destination="juV-4a-Kud" eventType="touchUpInside" id="JcO-nX-v1t"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iterator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tsv-no-cZz">
+                                <rect key="frame" x="172.5" y="434.5" width="69" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCZ-sX-JYS">
+                                <rect key="frame" x="157" y="549" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6B-iE-a2m">
+                                <rect key="frame" x="145" y="620" width="125" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="make Iterator"/>
+                                <connections>
+                                    <action selector="makeIteratorButtonDidTap:" destination="juV-4a-Kud" eventType="touchUpInside" id="3Zm-BX-UpS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aDd-2R-dwA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Tsv-no-cZz" firstAttribute="centerY" secondItem="HZ9-0j-EiH" secondAttribute="centerY" id="2aY-mh-qE5"/>
+                            <constraint firstItem="18j-zV-47o" firstAttribute="top" secondItem="uCZ-sX-JYS" secondAttribute="bottom" constant="8" symbolic="YES" id="3D3-5g-q7z"/>
+                            <constraint firstItem="aDd-2R-dwA" firstAttribute="trailing" secondItem="JqR-nx-hSz" secondAttribute="trailing" constant="20" id="7N8-fI-XEW"/>
+                            <constraint firstItem="fNF-5t-cnJ" firstAttribute="leading" secondItem="aDd-2R-dwA" secondAttribute="leading" constant="20" id="ASM-14-lkM"/>
+                            <constraint firstItem="uCZ-sX-JYS" firstAttribute="leading" secondItem="18j-zV-47o" secondAttribute="leading" id="Btq-cc-04N"/>
+                            <constraint firstItem="18j-zV-47o" firstAttribute="centerX" secondItem="HZ9-0j-EiH" secondAttribute="centerX" id="EYb-Zw-CrT"/>
+                            <constraint firstItem="fNF-5t-cnJ" firstAttribute="centerY" secondItem="18j-zV-47o" secondAttribute="centerY" id="KnZ-01-nfe"/>
+                            <constraint firstItem="aDd-2R-dwA" firstAttribute="bottom" secondItem="18j-zV-47o" secondAttribute="bottom" constant="250" id="gdt-Gt-Bd3"/>
+                            <constraint firstItem="Tsv-no-cZz" firstAttribute="centerX" secondItem="HZ9-0j-EiH" secondAttribute="centerX" id="ivn-ln-7AP"/>
+                            <constraint firstItem="JqR-nx-hSz" firstAttribute="centerY" secondItem="18j-zV-47o" secondAttribute="centerY" id="rCk-gP-MuT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputTextField" destination="18j-zV-47o" id="PBh-X1-A6W"/>
+                        <outlet property="presentLabel" destination="Tsv-no-cZz" id="QCW-Ny-u8R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IsJ-pw-kd1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2528" y="1467"/>
         </scene>
         <!--Abstract Factory View Controller-->
         <scene sceneID="LJh-Ax-Avp">

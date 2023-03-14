@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		349E310C29C0209300604B05 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E310B29C0209300604B05 /* BaseViewController.swift */; };
 		349E310E29C0256300604B05 /* TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E310D29C0256300604B05 /* TemplateViewController.swift */; };
+		349E311129C0294500604B05 /* Iterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E311029C0294500604B05 /* Iterator.swift */; };
+		349E311329C02A9900604B05 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E311229C02A9900604B05 /* Collection.swift */; };
+		349E311529C02DD500604B05 /* IteratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E311429C02DD500604B05 /* IteratorViewController.swift */; };
 		96535B8F29B63F4200C19406 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96535B8E29B63F4200C19406 /* Artist.swift */; };
 		96535B9129B642B800C19406 /* FaceFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96535B9029B642B800C19406 /* FaceFeature.swift */; };
 		96535B9329B6434A00C19406 /* Man.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96535B9229B6434A00C19406 /* Man.swift */; };
@@ -62,6 +65,9 @@
 /* Begin PBXFileReference section */
 		349E310B29C0209300604B05 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		349E310D29C0256300604B05 /* TemplateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateViewController.swift; sourceTree = "<group>"; };
+		349E311029C0294500604B05 /* Iterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iterator.swift; sourceTree = "<group>"; };
+		349E311229C02A9900604B05 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		349E311429C02DD500604B05 /* IteratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IteratorViewController.swift; sourceTree = "<group>"; };
 		96535B8E29B63F4200C19406 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		96535B9029B642B800C19406 /* FaceFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceFeature.swift; sourceTree = "<group>"; };
 		96535B9229B6434A00C19406 /* Man.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Man.swift; sourceTree = "<group>"; };
@@ -139,6 +145,16 @@
 				349E310D29C0256300604B05 /* TemplateViewController.swift */,
 			);
 			path = "Template Method";
+			sourceTree = "<group>";
+		};
+		349E310F29C0292D00604B05 /* Iterator */ = {
+			isa = PBXGroup;
+			children = (
+				349E311029C0294500604B05 /* Iterator.swift */,
+				349E311229C02A9900604B05 /* Collection.swift */,
+				349E311429C02DD500604B05 /* IteratorViewController.swift */,
+			);
+			path = Iterator;
 			sourceTree = "<group>";
 		};
 		96535B8D29B63DC500C19406 /* Abstract Factory */ = {
@@ -375,6 +391,7 @@
 		96F3DC5529BE299A00874650 /* Behavior */ = {
 			isa = PBXGroup;
 			children = (
+				349E310F29C0292D00604B05 /* Iterator */,
 				349E310A29C01F0E00604B05 /* Template Method */,
 				349E310829C01BDE00604B05 /* ChainOfResponsibility */,
 				96E5898929B5B1A700131FCE /* Observer */,
@@ -457,6 +474,7 @@
 				96E5898B29B5B1CD00131FCE /* ObserverViewController.swift in Sources */,
 				96C7704229BF1299000A276C /* FlyweightClass.swift in Sources */,
 				96C7703529BECE75000A276C /* BridgeViewController.swift in Sources */,
+				349E311129C0294500604B05 /* Iterator.swift in Sources */,
 				96535B9329B6434A00C19406 /* Man.swift in Sources */,
 				96535B9529B6436300C19406 /* Woman.swift in Sources */,
 				96E5897529B5A05600131FCE /* LoginViewController.swift in Sources */,
@@ -472,6 +490,7 @@
 				96C7703D29BF00A5000A276C /* FacadeViewController.swift in Sources */,
 				96C7704429BF1F98000A276C /* FlyweightFactory.swift in Sources */,
 				96ECE35329B88966004A1235 /* BuilderViewController.swift in Sources */,
+				349E311329C02A9900604B05 /* Collection.swift in Sources */,
 				967A562A29BB606100CC43A2 /* PrototypeViewController.swift in Sources */,
 				96C7702D29BECA4A000A276C /* Ink.swift in Sources */,
 				96E5898D29B5BC7A00131FCE /* Symbol.swift in Sources */,
@@ -492,6 +511,7 @@
 				96C7703329BECD2D000A276C /* Zebra.swift in Sources */,
 				96E5899729B5C6A100131FCE /* Observer.swift in Sources */,
 				96ECE34029B82A3A004A1235 /* Strategy.swift in Sources */,
+				349E311529C02DD500604B05 /* IteratorViewController.swift in Sources */,
 				96ECE35529B88C56004A1235 /* Builder.swift in Sources */,
 				96F3DC5729BE2A4E00874650 /* Adapter.swift in Sources */,
 				967A562629BB375400CC43A2 /* Prototype.swift in Sources */,
