@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		349E310C29C0209300604B05 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E310B29C0209300604B05 /* BaseViewController.swift */; };
+		349E310E29C0256300604B05 /* TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E310D29C0256300604B05 /* TemplateViewController.swift */; };
 		96535B8F29B63F4200C19406 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96535B8E29B63F4200C19406 /* Artist.swift */; };
 		96535B9129B642B800C19406 /* FaceFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96535B9029B642B800C19406 /* FaceFeature.swift */; };
 		96535B9329B6434A00C19406 /* Man.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96535B9229B6434A00C19406 /* Man.swift */; };
@@ -58,6 +60,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		349E310B29C0209300604B05 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		349E310D29C0256300604B05 /* TemplateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateViewController.swift; sourceTree = "<group>"; };
 		96535B8E29B63F4200C19406 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		96535B9029B642B800C19406 /* FaceFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceFeature.swift; sourceTree = "<group>"; };
 		96535B9229B6434A00C19406 /* Man.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Man.swift; sourceTree = "<group>"; };
@@ -121,6 +125,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		349E310829C01BDE00604B05 /* ChainOfResponsibility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ChainOfResponsibility;
+			sourceTree = "<group>";
+		};
+		349E310A29C01F0E00604B05 /* Template Method */ = {
+			isa = PBXGroup;
+			children = (
+				349E310B29C0209300604B05 /* BaseViewController.swift */,
+				349E310D29C0256300604B05 /* TemplateViewController.swift */,
+			);
+			path = "Template Method";
+			sourceTree = "<group>";
+		};
 		96535B8D29B63DC500C19406 /* Abstract Factory */ = {
 			isa = PBXGroup;
 			children = (
@@ -355,6 +375,8 @@
 		96F3DC5529BE299A00874650 /* Behavior */ = {
 			isa = PBXGroup;
 			children = (
+				349E310A29C01F0E00604B05 /* Template Method */,
+				349E310829C01BDE00604B05 /* ChainOfResponsibility */,
 				96E5898929B5B1A700131FCE /* Observer */,
 				96D55C9329B753E300997A57 /* Strategy */,
 			);
@@ -473,6 +495,8 @@
 				96ECE35529B88C56004A1235 /* Builder.swift in Sources */,
 				96F3DC5729BE2A4E00874650 /* Adapter.swift in Sources */,
 				967A562629BB375400CC43A2 /* Prototype.swift in Sources */,
+				349E310E29C0256300604B05 /* TemplateViewController.swift in Sources */,
+				349E310C29C0209300604B05 /* BaseViewController.swift in Sources */,
 				96535B8F29B63F4200C19406 /* Artist.swift in Sources */,
 				96E5898F29B5BD0700131FCE /* Heart.swift in Sources */,
 				96C7704729BF2064000A276C /* FlyweightViewController.swift in Sources */,
