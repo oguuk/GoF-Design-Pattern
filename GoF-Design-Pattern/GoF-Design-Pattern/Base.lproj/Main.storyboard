@@ -73,14 +73,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="menuCell" id="Ia6-Nf-Eta" customClass="MenuTableViewCell" customModule="GoF_Design_Pattern" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="50" width="414" height="43"/>
+                                <rect key="frame" x="0.0" y="50" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ia6-Nf-Eta" id="eQQ-9V-J8E">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmL-Ro-3hW">
-                                            <rect key="frame" x="20" y="11" width="42" height="21"/>
+                                            <rect key="frame" x="20" y="11" width="42" height="21.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -236,6 +236,60 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xAc-n8-8mi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-523.1884057971015" y="1443.75"/>
+        </scene>
+        <!--Command View Controller-->
+        <scene sceneID="bAo-w4-yO1">
+            <objects>
+                <viewController storyboardIdentifier="Command" id="X9X-xb-ANq" customClass="CommandViewController" customModule="GoF_Design_Pattern" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rZx-4K-H6r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lightbulb" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2ZS-Q5-ZC5">
+                                <rect key="frame" x="107" y="347" width="200" height="201.5"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="hrK-WQ-WpW"/>
+                                    <constraint firstAttribute="height" constant="200" id="wW5-ej-oQp"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9FO-aB-6nG">
+                                <rect key="frame" x="20" y="437.5" width="67" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="On"/>
+                                <connections>
+                                    <action selector="onButtonDidTap:" destination="X9X-xb-ANq" eventType="touchUpInside" id="qdU-43-wq1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNc-BD-Ahh">
+                                <rect key="frame" x="20" y="480.5" width="67" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Off"/>
+                                <connections>
+                                    <action selector="offButtonDidTap:" destination="X9X-xb-ANq" eventType="touchUpInside" id="x19-2q-CKK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oeC-Jr-KQ3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2ZS-Q5-ZC5" firstAttribute="leading" secondItem="9FO-aB-6nG" secondAttribute="trailing" constant="20" id="3XJ-HD-5s1"/>
+                            <constraint firstItem="2ZS-Q5-ZC5" firstAttribute="centerX" secondItem="rZx-4K-H6r" secondAttribute="centerX" id="B0o-91-ENh"/>
+                            <constraint firstItem="9FO-aB-6nG" firstAttribute="leading" secondItem="oeC-Jr-KQ3" secondAttribute="leading" constant="20" id="O6N-wC-qOY"/>
+                            <constraint firstItem="9FO-aB-6nG" firstAttribute="centerY" secondItem="oeC-Jr-KQ3" secondAttribute="centerY" id="Rgz-D0-W5T"/>
+                            <constraint firstItem="2ZS-Q5-ZC5" firstAttribute="leading" secondItem="mNc-BD-Ahh" secondAttribute="trailing" constant="20" id="fjl-Kz-ZTu"/>
+                            <constraint firstItem="mNc-BD-Ahh" firstAttribute="leading" secondItem="oeC-Jr-KQ3" secondAttribute="leading" constant="20" id="jH0-CX-qQn"/>
+                            <constraint firstItem="mNc-BD-Ahh" firstAttribute="top" secondItem="9FO-aB-6nG" secondAttribute="bottom" constant="8" symbolic="YES" id="tSU-Ev-KeR"/>
+                            <constraint firstItem="2ZS-Q5-ZC5" firstAttribute="centerY" secondItem="rZx-4K-H6r" secondAttribute="centerY" id="yEW-TP-w3L"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bulbImageView" destination="2ZS-Q5-ZC5" id="yhR-ZC-WBu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="76N-9g-Zd4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3217" y="1467"/>
         </scene>
         <!--Facade View Controller-->
         <scene sceneID="wcG-GK-Wqa">
@@ -834,6 +888,7 @@
     <resources>
         <image name="arrow.forward" catalog="system" width="128" height="95"/>
         <image name="building.fill" catalog="system" width="106" height="128"/>
+        <image name="lightbulb" catalog="system" width="92" height="128"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
@@ -842,6 +897,9 @@
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

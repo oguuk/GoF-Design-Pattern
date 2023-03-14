@@ -12,6 +12,12 @@
 		349E311129C0294500604B05 /* Iterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E311029C0294500604B05 /* Iterator.swift */; };
 		349E311329C02A9900604B05 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E311229C02A9900604B05 /* Collection.swift */; };
 		349E311529C02DD500604B05 /* IteratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E311429C02DD500604B05 /* IteratorViewController.swift */; };
+		349E311829C052CE00604B05 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E311729C052CE00604B05 /* Command.swift */; };
+		349E311A29C0585600604B05 /* LightOnCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E311929C0585600604B05 /* LightOnCommand.swift */; };
+		349E311C29C0588B00604B05 /* LightOffCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E311B29C0588B00604B05 /* LightOffCommand.swift */; };
+		349E311E29C0593900604B05 /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E311D29C0593900604B05 /* Light.swift */; };
+		349E312029C05BF300604B05 /* CommandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E311F29C05BF300604B05 /* CommandViewController.swift */; };
+		349E312229C05CE100604B05 /* Invoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E312129C05CE100604B05 /* Invoker.swift */; };
 		96535B8F29B63F4200C19406 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96535B8E29B63F4200C19406 /* Artist.swift */; };
 		96535B9129B642B800C19406 /* FaceFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96535B9029B642B800C19406 /* FaceFeature.swift */; };
 		96535B9329B6434A00C19406 /* Man.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96535B9229B6434A00C19406 /* Man.swift */; };
@@ -68,6 +74,12 @@
 		349E311029C0294500604B05 /* Iterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iterator.swift; sourceTree = "<group>"; };
 		349E311229C02A9900604B05 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		349E311429C02DD500604B05 /* IteratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IteratorViewController.swift; sourceTree = "<group>"; };
+		349E311729C052CE00604B05 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		349E311929C0585600604B05 /* LightOnCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightOnCommand.swift; sourceTree = "<group>"; };
+		349E311B29C0588B00604B05 /* LightOffCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightOffCommand.swift; sourceTree = "<group>"; };
+		349E311D29C0593900604B05 /* Light.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Light.swift; sourceTree = "<group>"; };
+		349E311F29C05BF300604B05 /* CommandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandViewController.swift; sourceTree = "<group>"; };
+		349E312129C05CE100604B05 /* Invoker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invoker.swift; sourceTree = "<group>"; };
 		96535B8E29B63F4200C19406 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		96535B9029B642B800C19406 /* FaceFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceFeature.swift; sourceTree = "<group>"; };
 		96535B9229B6434A00C19406 /* Man.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Man.swift; sourceTree = "<group>"; };
@@ -155,6 +167,19 @@
 				349E311429C02DD500604B05 /* IteratorViewController.swift */,
 			);
 			path = Iterator;
+			sourceTree = "<group>";
+		};
+		349E311629C0526900604B05 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				349E311729C052CE00604B05 /* Command.swift */,
+				349E311929C0585600604B05 /* LightOnCommand.swift */,
+				349E311B29C0588B00604B05 /* LightOffCommand.swift */,
+				349E311D29C0593900604B05 /* Light.swift */,
+				349E311F29C05BF300604B05 /* CommandViewController.swift */,
+				349E312129C05CE100604B05 /* Invoker.swift */,
+			);
+			path = Command;
 			sourceTree = "<group>";
 		};
 		96535B8D29B63DC500C19406 /* Abstract Factory */ = {
@@ -391,6 +416,7 @@
 		96F3DC5529BE299A00874650 /* Behavior */ = {
 			isa = PBXGroup;
 			children = (
+				349E311629C0526900604B05 /* Command */,
 				349E310F29C0292D00604B05 /* Iterator */,
 				349E310A29C01F0E00604B05 /* Template Method */,
 				349E310829C01BDE00604B05 /* ChainOfResponsibility */,
@@ -478,16 +504,21 @@
 				96535B9329B6434A00C19406 /* Man.swift in Sources */,
 				96535B9529B6436300C19406 /* Woman.swift in Sources */,
 				96E5897529B5A05600131FCE /* LoginViewController.swift in Sources */,
+				349E311C29C0588B00604B05 /* LightOffCommand.swift in Sources */,
 				96E5899D29B5FDC200131FCE /* MenuTableViewCell.swift in Sources */,
 				96E5899129B5BE7F00131FCE /* BrokeHeart.swift in Sources */,
+				349E312029C05BF300604B05 /* CommandViewController.swift in Sources */,
 				96ECE34A29B83391004A1235 /* KoreanAge.swift in Sources */,
 				96ECE34829B83387004A1235 /* InternationalAge.swift in Sources */,
 				96535B9729B645F600C19406 /* AbstractFactory.swift in Sources */,
+				349E312229C05CE100604B05 /* Invoker.swift in Sources */,
 				96C7703129BECCE7000A276C /* HI-TEC-C.swift in Sources */,
 				96E5899929B5F15200131FCE /* Extension.swift in Sources */,
 				96E5899329B5BF1F00131FCE /* SymbolFactory.swift in Sources */,
 				96E5898729B5A11700131FCE /* Singleton.swift in Sources */,
 				96C7703D29BF00A5000A276C /* FacadeViewController.swift in Sources */,
+				349E311E29C0593900604B05 /* Light.swift in Sources */,
+				349E311829C052CE00604B05 /* Command.swift in Sources */,
 				96C7704429BF1F98000A276C /* FlyweightFactory.swift in Sources */,
 				96ECE35329B88966004A1235 /* BuilderViewController.swift in Sources */,
 				349E311329C02A9900604B05 /* Collection.swift in Sources */,
@@ -497,6 +528,7 @@
 				96C7702F29BECCA4000A276C /* Pen.swift in Sources */,
 				96ECE35729B897AA004A1235 /* House.swift in Sources */,
 				96ECE34C29B84125004A1235 /* AgeCalculator.swift in Sources */,
+				349E311A29C0585600604B05 /* LightOnCommand.swift in Sources */,
 				96E5899B29B5F9F300131FCE /* MenuViewController.swift in Sources */,
 				96E5899529B5C69500131FCE /* Subject.swift in Sources */,
 				967A562829BB5C1B00CC43A2 /* Building.swift in Sources */,
