@@ -78,6 +78,9 @@
 		96ECE35929B899B0004A1235 /* HouseBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ECE35829B899B0004A1235 /* HouseBuilder.swift */; };
 		96F3DC5729BE2A4E00874650 /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3DC5629BE2A4E00874650 /* Adapter.swift */; };
 		96FF790429C18C0100B425FC /* InterpreterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF790329C18C0100B425FC /* InterpreterViewController.swift */; };
+		96FF790729C19E0100B425FC /* Mediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF790629C19E0100B425FC /* Mediator.swift */; };
+		96FF790929C19E5B00B425FC /* Colleague.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF790829C19E5B00B425FC /* Colleague.swift */; };
+		96FF790B29C1A3C600B425FC /* MediatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF790A29C1A3C600B425FC /* MediatorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -154,6 +157,9 @@
 		96ECE35829B899B0004A1235 /* HouseBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseBuilder.swift; sourceTree = "<group>"; };
 		96F3DC5629BE2A4E00874650 /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
 		96FF790329C18C0100B425FC /* InterpreterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpreterViewController.swift; sourceTree = "<group>"; };
+		96FF790629C19E0100B425FC /* Mediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mediator.swift; sourceTree = "<group>"; };
+		96FF790829C19E5B00B425FC /* Colleague.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colleague.swift; sourceTree = "<group>"; };
+		96FF790A29C1A3C600B425FC /* MediatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediatorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -459,6 +465,7 @@
 		96F3DC5529BE299A00874650 /* Behavior */ = {
 			isa = PBXGroup;
 			children = (
+				96FF790529C19DF200B425FC /* Mediator */,
 				96D3042929C0BF6E00384284 /* Interpreter */,
 				349E311629C0526900604B05 /* Command */,
 				349E310F29C0292D00604B05 /* Iterator */,
@@ -468,6 +475,16 @@
 				96D55C9329B753E300997A57 /* Strategy */,
 			);
 			path = Behavior;
+			sourceTree = "<group>";
+		};
+		96FF790529C19DF200B425FC /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				96FF790629C19E0100B425FC /* Mediator.swift */,
+				96FF790829C19E5B00B425FC /* Colleague.swift */,
+				96FF790A29C1A3C600B425FC /* MediatorViewController.swift */,
+			);
+			path = Mediator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -547,11 +564,14 @@
 				96C7703529BECE75000A276C /* BridgeViewController.swift in Sources */,
 				96D3042D29C0C72F00384284 /* IntergerContext.swift in Sources */,
 				349E311129C0294500604B05 /* Iterator.swift in Sources */,
+				96FF790729C19E0100B425FC /* Mediator.swift in Sources */,
 				96535B9329B6434A00C19406 /* Man.swift in Sources */,
 				96535B9529B6436300C19406 /* Woman.swift in Sources */,
 				96E5897529B5A05600131FCE /* LoginViewController.swift in Sources */,
 				349E311C29C0588B00604B05 /* LightOffCommand.swift in Sources */,
+				96FF790929C19E5B00B425FC /* Colleague.swift in Sources */,
 				96E5899D29B5FDC200131FCE /* MenuTableViewCell.swift in Sources */,
+				96FF790B29C1A3C600B425FC /* MediatorViewController.swift in Sources */,
 				96E5899129B5BE7F00131FCE /* BrokeHeart.swift in Sources */,
 				349E312029C05BF300604B05 /* CommandViewController.swift in Sources */,
 				349E312429C0654F00604B05 /* Transaction.swift in Sources */,
