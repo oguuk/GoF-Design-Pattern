@@ -608,6 +608,31 @@
             </objects>
             <point key="canvasLocation" x="1746" y="2199"/>
         </scene>
+        <!--State View Controller-->
+        <scene sceneID="lk3-gI-zqY">
+            <objects>
+                <viewController storyboardIdentifier="State" id="vb7-Ow-2t1" customClass="StateViewController" customModule="GoF_Design_Pattern" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nsA-ao-6rA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="U88-Um-yd0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="TWw-Sw-eEs" appends="YES" id="hkK-J7-cgZ"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EVp-zk-aiH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="TWw-Sw-eEs">
+                    <connections>
+                        <action selector="tapGestureNotify:" destination="vb7-Ow-2t1" id="Y35-BM-gh4"/>
+                        <outlet property="delegate" destination="nsA-ao-6rA" id="w6A-ct-8yy"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2528" y="2202"/>
+        </scene>
         <!--Command View Controller-->
         <scene sceneID="bAo-w4-yO1">
             <objects>

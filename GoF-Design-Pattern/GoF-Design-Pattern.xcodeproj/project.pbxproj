@@ -85,6 +85,9 @@
 		96FF791029C1B62C00B425FC /* Memento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF790F29C1B62C00B425FC /* Memento.swift */; };
 		96FF791229C1B63600B425FC /* Caretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF791129C1B63600B425FC /* Caretaker.swift */; };
 		96FF791429C1C02F00B425FC /* MementoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF791329C1C02F00B425FC /* MementoViewController.swift */; };
+		96FF791729C1C9E000B425FC /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF791629C1C9E000B425FC /* State.swift */; };
+		96FF791929C1CC3500B425FC /* ScreenColorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF791829C1CC3500B425FC /* ScreenColorState.swift */; };
+		96FF791B29C1CE4800B425FC /* StateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF791A29C1CE4800B425FC /* StateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -168,6 +171,9 @@
 		96FF790F29C1B62C00B425FC /* Memento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memento.swift; sourceTree = "<group>"; };
 		96FF791129C1B63600B425FC /* Caretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caretaker.swift; sourceTree = "<group>"; };
 		96FF791329C1C02F00B425FC /* MementoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MementoViewController.swift; sourceTree = "<group>"; };
+		96FF791629C1C9E000B425FC /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		96FF791829C1CC3500B425FC /* ScreenColorState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenColorState.swift; sourceTree = "<group>"; };
+		96FF791A29C1CE4800B425FC /* StateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -473,6 +479,7 @@
 		96F3DC5529BE299A00874650 /* Behavior */ = {
 			isa = PBXGroup;
 			children = (
+				96FF791529C1C9A300B425FC /* State */,
 				96FF790C29C1B4E000B425FC /* Memento */,
 				96FF790529C19DF200B425FC /* Mediator */,
 				96D3042929C0BF6E00384284 /* Interpreter */,
@@ -505,6 +512,16 @@
 				96FF791329C1C02F00B425FC /* MementoViewController.swift */,
 			);
 			path = Memento;
+			sourceTree = "<group>";
+		};
+		96FF791529C1C9A300B425FC /* State */ = {
+			isa = PBXGroup;
+			children = (
+				96FF791629C1C9E000B425FC /* State.swift */,
+				96FF791829C1CC3500B425FC /* ScreenColorState.swift */,
+				96FF791A29C1CE4800B425FC /* StateViewController.swift */,
+			);
+			path = State;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -584,6 +601,7 @@
 				96C7703529BECE75000A276C /* BridgeViewController.swift in Sources */,
 				96D3042D29C0C72F00384284 /* IntergerContext.swift in Sources */,
 				349E311129C0294500604B05 /* Iterator.swift in Sources */,
+				96FF791B29C1CE4800B425FC /* StateViewController.swift in Sources */,
 				96FF790729C19E0100B425FC /* Mediator.swift in Sources */,
 				96535B9329B6434A00C19406 /* Man.swift in Sources */,
 				96535B9529B6436300C19406 /* Woman.swift in Sources */,
@@ -604,6 +622,7 @@
 				349E312229C05CE100604B05 /* Invoker.swift in Sources */,
 				96C7703129BECCE7000A276C /* HI-TEC-C.swift in Sources */,
 				96E5899929B5F15200131FCE /* Extension.swift in Sources */,
+				96FF791929C1CC3500B425FC /* ScreenColorState.swift in Sources */,
 				96E5899329B5BF1F00131FCE /* SymbolFactory.swift in Sources */,
 				96E5898729B5A11700131FCE /* Singleton.swift in Sources */,
 				96C7703D29BF00A5000A276C /* FacadeViewController.swift in Sources */,
@@ -645,6 +664,7 @@
 				96F3DC5729BE2A4E00874650 /* Adapter.swift in Sources */,
 				967A562629BB375400CC43A2 /* Prototype.swift in Sources */,
 				349E310E29C0256300604B05 /* TemplateViewController.swift in Sources */,
+				96FF791729C1C9E000B425FC /* State.swift in Sources */,
 				349E310C29C0209300604B05 /* BaseViewController.swift in Sources */,
 				349E312C29C06B7800604B05 /* Bank Book.swift in Sources */,
 				96535B8F29B63F4200C19406 /* Artist.swift in Sources */,
