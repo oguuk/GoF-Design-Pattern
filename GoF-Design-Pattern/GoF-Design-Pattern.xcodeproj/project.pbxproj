@@ -81,6 +81,10 @@
 		96FF790729C19E0100B425FC /* Mediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF790629C19E0100B425FC /* Mediator.swift */; };
 		96FF790929C19E5B00B425FC /* Colleague.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF790829C19E5B00B425FC /* Colleague.swift */; };
 		96FF790B29C1A3C600B425FC /* MediatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF790A29C1A3C600B425FC /* MediatorViewController.swift */; };
+		96FF790E29C1B62400B425FC /* Originator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF790D29C1B62400B425FC /* Originator.swift */; };
+		96FF791029C1B62C00B425FC /* Memento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF790F29C1B62C00B425FC /* Memento.swift */; };
+		96FF791229C1B63600B425FC /* Caretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF791129C1B63600B425FC /* Caretaker.swift */; };
+		96FF791429C1C02F00B425FC /* MementoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF791329C1C02F00B425FC /* MementoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -160,6 +164,10 @@
 		96FF790629C19E0100B425FC /* Mediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mediator.swift; sourceTree = "<group>"; };
 		96FF790829C19E5B00B425FC /* Colleague.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colleague.swift; sourceTree = "<group>"; };
 		96FF790A29C1A3C600B425FC /* MediatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediatorViewController.swift; sourceTree = "<group>"; };
+		96FF790D29C1B62400B425FC /* Originator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Originator.swift; sourceTree = "<group>"; };
+		96FF790F29C1B62C00B425FC /* Memento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memento.swift; sourceTree = "<group>"; };
+		96FF791129C1B63600B425FC /* Caretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caretaker.swift; sourceTree = "<group>"; };
+		96FF791329C1C02F00B425FC /* MementoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MementoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -465,6 +473,7 @@
 		96F3DC5529BE299A00874650 /* Behavior */ = {
 			isa = PBXGroup;
 			children = (
+				96FF790C29C1B4E000B425FC /* Memento */,
 				96FF790529C19DF200B425FC /* Mediator */,
 				96D3042929C0BF6E00384284 /* Interpreter */,
 				349E311629C0526900604B05 /* Command */,
@@ -485,6 +494,17 @@
 				96FF790A29C1A3C600B425FC /* MediatorViewController.swift */,
 			);
 			path = Mediator;
+			sourceTree = "<group>";
+		};
+		96FF790C29C1B4E000B425FC /* Memento */ = {
+			isa = PBXGroup;
+			children = (
+				96FF790D29C1B62400B425FC /* Originator.swift */,
+				96FF790F29C1B62C00B425FC /* Memento.swift */,
+				96FF791129C1B63600B425FC /* Caretaker.swift */,
+				96FF791329C1C02F00B425FC /* MementoViewController.swift */,
+			);
+			path = Memento;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -567,6 +587,9 @@
 				96FF790729C19E0100B425FC /* Mediator.swift in Sources */,
 				96535B9329B6434A00C19406 /* Man.swift in Sources */,
 				96535B9529B6436300C19406 /* Woman.swift in Sources */,
+				96FF791429C1C02F00B425FC /* MementoViewController.swift in Sources */,
+				96FF790E29C1B62400B425FC /* Originator.swift in Sources */,
+				96FF791229C1B63600B425FC /* Caretaker.swift in Sources */,
 				96E5897529B5A05600131FCE /* LoginViewController.swift in Sources */,
 				349E311C29C0588B00604B05 /* LightOffCommand.swift in Sources */,
 				96FF790929C19E5B00B425FC /* Colleague.swift in Sources */,
@@ -590,6 +613,7 @@
 				96C7704429BF1F98000A276C /* FlyweightFactory.swift in Sources */,
 				349E312829C0684E00604B05 /* Withdraw.swift in Sources */,
 				96ECE35329B88966004A1235 /* BuilderViewController.swift in Sources */,
+				96FF791029C1B62C00B425FC /* Memento.swift in Sources */,
 				349E311329C02A9900604B05 /* Collection.swift in Sources */,
 				967A562A29BB606100CC43A2 /* PrototypeViewController.swift in Sources */,
 				96C7702D29BECA4A000A276C /* Ink.swift in Sources */,
