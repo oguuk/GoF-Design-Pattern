@@ -88,6 +88,11 @@
 		96FF791729C1C9E000B425FC /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF791629C1C9E000B425FC /* State.swift */; };
 		96FF791929C1CC3500B425FC /* ScreenColorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF791829C1CC3500B425FC /* ScreenColorState.swift */; };
 		96FF791B29C1CE4800B425FC /* StateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF791A29C1CE4800B425FC /* StateViewController.swift */; };
+		96FF792129C1DAF800B425FC /* Visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF792029C1DAF800B425FC /* Visitor.swift */; };
+		96FF792329C1DBC000B425FC /* CustomerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF792229C1DBC000B425FC /* CustomerProtocol.swift */; };
+		96FF792529C2058E00B425FC /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF792429C2058E00B425FC /* Customer.swift */; };
+		96FF792729C206C900B425FC /* MarketVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF792629C206C900B425FC /* MarketVisitor.swift */; };
+		96FF792929C2073E00B425FC /* VisitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF792829C2073E00B425FC /* VisitorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -174,6 +179,11 @@
 		96FF791629C1C9E000B425FC /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		96FF791829C1CC3500B425FC /* ScreenColorState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenColorState.swift; sourceTree = "<group>"; };
 		96FF791A29C1CE4800B425FC /* StateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateViewController.swift; sourceTree = "<group>"; };
+		96FF792029C1DAF800B425FC /* Visitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visitor.swift; sourceTree = "<group>"; };
+		96FF792229C1DBC000B425FC /* CustomerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerProtocol.swift; sourceTree = "<group>"; };
+		96FF792429C2058E00B425FC /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		96FF792629C206C900B425FC /* MarketVisitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketVisitor.swift; sourceTree = "<group>"; };
+		96FF792829C2073E00B425FC /* VisitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -479,6 +489,7 @@
 		96F3DC5529BE299A00874650 /* Behavior */ = {
 			isa = PBXGroup;
 			children = (
+				96FF791F29C1DAEA00B425FC /* Visitor */,
 				96FF791529C1C9A300B425FC /* State */,
 				96FF790C29C1B4E000B425FC /* Memento */,
 				96FF790529C19DF200B425FC /* Mediator */,
@@ -522,6 +533,18 @@
 				96FF791A29C1CE4800B425FC /* StateViewController.swift */,
 			);
 			path = State;
+			sourceTree = "<group>";
+		};
+		96FF791F29C1DAEA00B425FC /* Visitor */ = {
+			isa = PBXGroup;
+			children = (
+				96FF792029C1DAF800B425FC /* Visitor.swift */,
+				96FF792229C1DBC000B425FC /* CustomerProtocol.swift */,
+				96FF792429C2058E00B425FC /* Customer.swift */,
+				96FF792629C206C900B425FC /* MarketVisitor.swift */,
+				96FF792829C2073E00B425FC /* VisitorViewController.swift */,
+			);
+			path = Visitor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -595,6 +618,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96FF792929C2073E00B425FC /* VisitorViewController.swift in Sources */,
 				96E5898B29B5B1CD00131FCE /* ObserverViewController.swift in Sources */,
 				96C7704229BF1299000A276C /* FlyweightClass.swift in Sources */,
 				349E312629C0684100604B05 /* Deposit.swift in Sources */,
@@ -606,6 +630,7 @@
 				96535B9329B6434A00C19406 /* Man.swift in Sources */,
 				96535B9529B6436300C19406 /* Woman.swift in Sources */,
 				96FF791429C1C02F00B425FC /* MementoViewController.swift in Sources */,
+				96FF792129C1DAF800B425FC /* Visitor.swift in Sources */,
 				96FF790E29C1B62400B425FC /* Originator.swift in Sources */,
 				96FF791229C1B63600B425FC /* Caretaker.swift in Sources */,
 				96E5897529B5A05600131FCE /* LoginViewController.swift in Sources */,
@@ -618,6 +643,7 @@
 				349E312429C0654F00604B05 /* Transaction.swift in Sources */,
 				96ECE34A29B83391004A1235 /* KoreanAge.swift in Sources */,
 				96ECE34829B83387004A1235 /* InternationalAge.swift in Sources */,
+				96FF792529C2058E00B425FC /* Customer.swift in Sources */,
 				96535B9729B645F600C19406 /* AbstractFactory.swift in Sources */,
 				349E312229C05CE100604B05 /* Invoker.swift in Sources */,
 				96C7703129BECCE7000A276C /* HI-TEC-C.swift in Sources */,
@@ -628,8 +654,10 @@
 				96C7703D29BF00A5000A276C /* FacadeViewController.swift in Sources */,
 				349E311E29C0593900604B05 /* Light.swift in Sources */,
 				349E311829C052CE00604B05 /* Command.swift in Sources */,
+				96FF792329C1DBC000B425FC /* CustomerProtocol.swift in Sources */,
 				96FF790429C18C0100B425FC /* InterpreterViewController.swift in Sources */,
 				96C7704429BF1F98000A276C /* FlyweightFactory.swift in Sources */,
+				96FF792729C206C900B425FC /* MarketVisitor.swift in Sources */,
 				349E312829C0684E00604B05 /* Withdraw.swift in Sources */,
 				96ECE35329B88966004A1235 /* BuilderViewController.swift in Sources */,
 				96FF791029C1B62C00B425FC /* Memento.swift in Sources */,

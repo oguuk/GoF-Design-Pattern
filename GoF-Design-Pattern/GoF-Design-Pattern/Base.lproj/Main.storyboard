@@ -633,6 +633,75 @@
             </objects>
             <point key="canvasLocation" x="2528" y="2202"/>
         </scene>
+        <!--Visitor View Controller-->
+        <scene sceneID="hzh-is-DD7">
+            <objects>
+                <viewController storyboardIdentifier="Visitor" id="QN6-u0-uhR" customClass="VisitorViewController" customModule="GoF_Design_Pattern" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="epb-G4-i5S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="building.columns" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="53p-FS-H54">
+                                <rect key="frame" x="156.5" y="267.5" width="101" height="100.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="AKl-vJ-CNw"/>
+                                    <constraint firstAttribute="width" constant="101" id="peH-Ta-Wrx"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tj6-UV-EnJ">
+                                <rect key="frame" x="20" y="432.5" width="57.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Child"/>
+                                <connections>
+                                    <action selector="childButtonDidTap:" destination="QN6-u0-uhR" eventType="touchUpInside" id="2Qh-Un-hpW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXz-sT-w2Y">
+                                <rect key="frame" x="178" y="432.5" width="58" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Adult"/>
+                                <connections>
+                                    <action selector="AdultButtonDidTap:" destination="QN6-u0-uhR" eventType="touchUpInside" id="14Q-9x-bDO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojj-Zz-ggh">
+                                <rect key="frame" x="326" y="432.5" width="68" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Elderly"/>
+                                <connections>
+                                    <action selector="elderlyButtonDidTap:" destination="QN6-u0-uhR" eventType="touchUpInside" id="Uan-YX-hf8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="누가 방문했나?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Co9-Qx-4kY">
+                                <rect key="frame" x="156.5" y="217.5" width="101" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="q2T-X4-hC8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="q2T-X4-hC8" firstAttribute="trailing" secondItem="ojj-Zz-ggh" secondAttribute="trailing" constant="20" id="0Im-xu-4Om"/>
+                            <constraint firstItem="tj6-UV-EnJ" firstAttribute="leading" secondItem="q2T-X4-hC8" secondAttribute="leading" constant="20" id="DL6-g9-sLe"/>
+                            <constraint firstItem="53p-FS-H54" firstAttribute="centerY" secondItem="epb-G4-i5S" secondAttribute="centerY" constant="-130" id="Jkn-2h-Jvj"/>
+                            <constraint firstItem="KXz-sT-w2Y" firstAttribute="centerX" secondItem="epb-G4-i5S" secondAttribute="centerX" id="MyQ-2C-7Te"/>
+                            <constraint firstItem="tj6-UV-EnJ" firstAttribute="centerY" secondItem="KXz-sT-w2Y" secondAttribute="centerY" id="Qo8-WK-xa8"/>
+                            <constraint firstItem="Co9-Qx-4kY" firstAttribute="centerX" secondItem="epb-G4-i5S" secondAttribute="centerX" id="YqB-ga-iWa"/>
+                            <constraint firstItem="53p-FS-H54" firstAttribute="centerX" secondItem="epb-G4-i5S" secondAttribute="centerX" id="h2Y-kX-z1b"/>
+                            <constraint firstItem="Co9-Qx-4kY" firstAttribute="top" secondItem="53p-FS-H54" secondAttribute="top" constant="-50" id="lgS-uh-cXx"/>
+                            <constraint firstItem="ojj-Zz-ggh" firstAttribute="centerY" secondItem="KXz-sT-w2Y" secondAttribute="centerY" id="nC3-oo-cqo"/>
+                            <constraint firstItem="KXz-sT-w2Y" firstAttribute="centerY" secondItem="epb-G4-i5S" secondAttribute="centerY" id="sdx-DM-fHQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="visitorLabel" destination="Co9-Qx-4kY" id="IH3-Ry-KN8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oY4-Kt-9Oo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3285.507246376812" y="2199.7767857142858"/>
+        </scene>
         <!--Command View Controller-->
         <scene sceneID="bAo-w4-yO1">
             <objects>
@@ -1283,6 +1352,7 @@
     </scenes>
     <resources>
         <image name="arrow.forward" catalog="system" width="128" height="98"/>
+        <image name="building.columns" catalog="system" width="128" height="113"/>
         <image name="building.fill" catalog="system" width="108" height="128"/>
         <image name="lightbulb" catalog="system" width="113" height="128"/>
         <systemColor name="labelColor">
