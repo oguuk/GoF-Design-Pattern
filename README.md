@@ -30,7 +30,7 @@ Structural patterns are patterns that allow you to combine classes or objects in
 |---|:---:|---|:---:|
 |Ådapter|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)|0.5H|✅|
 |𝐁ridge|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)|0.5H|✅|
-|𝐂omposite|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
+|𝐂omposite|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)|1.0H|✅|
 |𝐅açade|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)|0.5H|✅|
 |𝐅lyweight|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)|1.0H|✅|
 |𝐏rotection Proxy|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
@@ -48,12 +48,12 @@ A behavior pattern is a pattern that defines how classes or objects should inter
 |𝐎bserver|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)|1.0H|✅|
 |𝐂hain of Responsibility|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)|1.0H|❎|
 |𝐂ommand|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)|0.5H|✅|
-|𝐈nterpreter|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
+|𝐈nterpreter|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)|1.0H|✅|
 |𝐈terator|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)|0.5H|✅|
-|𝐌ediator|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
-|𝐌emento|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
-|𝐒tate|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
+|𝐌ediator|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)|1.0H|✅|
+|𝐌emento|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)|0.5H|✅|
+|𝐒tate|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)|0.5H|✅|
 |𝐒trategy|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)|0.5H|✅|
 |𝐓emplate Method|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)|0.5H|✅|
-|𝐕isitor|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)||❎|
+|𝐕isitor|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/singleton/singleton.md)|0.5H|✅|
 
