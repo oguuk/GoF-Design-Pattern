@@ -93,6 +93,10 @@
 		96FF792529C2058E00B425FC /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF792429C2058E00B425FC /* Customer.swift */; };
 		96FF792729C206C900B425FC /* MarketVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF792629C206C900B425FC /* MarketVisitor.swift */; };
 		96FF792929C2073E00B425FC /* VisitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF792829C2073E00B425FC /* VisitorViewController.swift */; };
+		96FF792B29C2180100B425FC /* DominoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF792A29C2180100B425FC /* DominoProtocol.swift */; };
+		96FF792D29C218A600B425FC /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF792C29C218A600B425FC /* Square.swift */; };
+		96FF792F29C218D300B425FC /* Domino.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF792E29C218D300B425FC /* Domino.swift */; };
+		96FF793129C21C8400B425FC /* CompositeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF793029C21C8400B425FC /* CompositeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -184,6 +188,10 @@
 		96FF792429C2058E00B425FC /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		96FF792629C206C900B425FC /* MarketVisitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketVisitor.swift; sourceTree = "<group>"; };
 		96FF792829C2073E00B425FC /* VisitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorViewController.swift; sourceTree = "<group>"; };
+		96FF792A29C2180100B425FC /* DominoProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DominoProtocol.swift; sourceTree = "<group>"; };
+		96FF792C29C218A600B425FC /* Square.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Square.swift; sourceTree = "<group>"; };
+		96FF792E29C218D300B425FC /* Domino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domino.swift; sourceTree = "<group>"; };
+		96FF793029C21C8400B425FC /* CompositeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,6 +287,10 @@
 		96C7703629BED9FF000A276C /* Composite */ = {
 			isa = PBXGroup;
 			children = (
+				96FF792A29C2180100B425FC /* DominoProtocol.swift */,
+				96FF792C29C218A600B425FC /* Square.swift */,
+				96FF792E29C218D300B425FC /* Domino.swift */,
+				96FF793029C21C8400B425FC /* CompositeViewController.swift */,
 			);
 			path = Composite;
 			sourceTree = "<group>";
@@ -623,6 +635,7 @@
 				96C7704229BF1299000A276C /* FlyweightClass.swift in Sources */,
 				349E312629C0684100604B05 /* Deposit.swift in Sources */,
 				96C7703529BECE75000A276C /* BridgeViewController.swift in Sources */,
+				96FF792D29C218A600B425FC /* Square.swift in Sources */,
 				96D3042D29C0C72F00384284 /* IntergerContext.swift in Sources */,
 				349E311129C0294500604B05 /* Iterator.swift in Sources */,
 				96FF791B29C1CE4800B425FC /* StateViewController.swift in Sources */,
@@ -646,8 +659,10 @@
 				96FF792529C2058E00B425FC /* Customer.swift in Sources */,
 				96535B9729B645F600C19406 /* AbstractFactory.swift in Sources */,
 				349E312229C05CE100604B05 /* Invoker.swift in Sources */,
+				96FF792F29C218D300B425FC /* Domino.swift in Sources */,
 				96C7703129BECCE7000A276C /* HI-TEC-C.swift in Sources */,
 				96E5899929B5F15200131FCE /* Extension.swift in Sources */,
+				96FF793129C21C8400B425FC /* CompositeViewController.swift in Sources */,
 				96FF791929C1CC3500B425FC /* ScreenColorState.swift in Sources */,
 				96E5899329B5BF1F00131FCE /* SymbolFactory.swift in Sources */,
 				96E5898729B5A11700131FCE /* Singleton.swift in Sources */,
@@ -661,6 +676,7 @@
 				349E312829C0684E00604B05 /* Withdraw.swift in Sources */,
 				96ECE35329B88966004A1235 /* BuilderViewController.swift in Sources */,
 				96FF791029C1B62C00B425FC /* Memento.swift in Sources */,
+				96FF792B29C2180100B425FC /* DominoProtocol.swift in Sources */,
 				349E311329C02A9900604B05 /* Collection.swift in Sources */,
 				967A562A29BB606100CC43A2 /* PrototypeViewController.swift in Sources */,
 				96C7702D29BECA4A000A276C /* Ink.swift in Sources */,
