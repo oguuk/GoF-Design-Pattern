@@ -43,7 +43,7 @@ struct Domino: DominoProtocol { // Composite
 
 ## Usage
 ```swift
-        private var square1 = Square()
+    private var square1 = Square()
     private var square2 = Square()
     private var square3 = Square()
     private var square4 = Square()
