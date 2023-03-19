@@ -33,8 +33,8 @@ Structural patterns are patterns that allow you to combine classes or objects in
 |𝐂omposite|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/Structural/Composite.md)|1.0H|✅|
 |𝐅açade|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/Structural/Façade.md)|0.5H|✅|
 |𝐅lyweight|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/Structural/Flyweight)|1.0H|✅|
-|𝐏rotection Proxy|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/Structural/Protection%20Proxy.md)||❎|
-|𝐕irtual Proxy|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/Structural/Virtual%20Proxy.md)||❎| 
+|𝐏rotection Proxy|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/Structural/Protection%20Proxy.md)|-|✅|
+|𝐕irtual Proxy|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/Structural/Virtual%20Proxy.md)|-|✅|
   
 <br/><br/>
 
