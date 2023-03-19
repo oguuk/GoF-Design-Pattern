@@ -1,5 +1,5 @@
 # GoF-Design-Pattern
-Studying GoF [Design Patterns](http://principles-wiki.net/collections:gof_patterns) by [@oguuk](https://github.com/oguuk)  
+Studying GoF [Design Patterns](http://principles-wiki.net/collections:gof_patterns)
 
 <br/><br/>
 
