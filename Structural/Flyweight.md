@@ -34,6 +34,11 @@ struct FlyweightFactory {
 ```swift
 var factory: FlyweightFactory = FlyweightFactory()
 
-let weightObject = factory.getWeights(name: readLine())
-guard let address = weightObject.address else { return } // address를 확인하면 주속값이 같음
+let name = "test"
+
+let weightObject = factory.getWeights(name: name)
+
+let address = weightObject.address
+
+print(address)
 ```
