@@ -46,7 +46,7 @@ A behavior pattern is a pattern that defines how classes or objects should inter
 |Pattern|Document|Estimates|State|
 |---|:---:|---|:---:|
 |𝐎bserver|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/Behavioral/Observer.md)|1.0H|✅|
-|𝐂hain of Responsibility|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/Behavioral/Chain%20of%20Responsibility.md)|1.0H|❎|
+|𝐂hain of Responsibility|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/Behavioral/Chain%20of%20Responsibility.md)|1.0H|✅|
 |𝐂ommand|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/Behavioral/Command.md)|0.5H|✅|
 |𝐈nterpreter|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/Behavioral/Interpreter.md)|1.0H|✅|
 |𝐈terator|[Document](https://github.com/oguuk/GoF-Design-Pattern/blob/document/Behavioral/Iterator.md)|0.5H|✅|
