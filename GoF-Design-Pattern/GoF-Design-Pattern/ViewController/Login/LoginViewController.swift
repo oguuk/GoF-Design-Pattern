@@ -19,7 +19,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginButtonTap(_ sender: Any) {
         LoginSingleton.shared.login(withUserName: IDTextField.text ?? "", password: passwordTextField.text ?? "")
-        if LoginSingleton.shared.isLoggedIn {
+        if LoginSingleton.shared.isLoggedIn() {
             guard let menuVC = self.storyboard?.instantiateViewController(withIdentifier: "MenuVC") else { return }
             self.navigationController?.pushViewController(menuVC, animated: true)
         }

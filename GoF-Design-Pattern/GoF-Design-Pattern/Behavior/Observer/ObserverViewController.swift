@@ -27,6 +27,4 @@ class ObserverViewController: UIViewController {
         images.notifyObservers(event: factory.createSymbol(type: type)?.image)
         texts.notifyObservers(event: factory.createSymbol(type: type)?.describe)
     }
-    
-
 }

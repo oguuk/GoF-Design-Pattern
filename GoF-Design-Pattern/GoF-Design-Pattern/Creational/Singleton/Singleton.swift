@@ -12,25 +12,29 @@ final class LoginSingleton {
     
     static let shared = LoginSingleton()
     
-    var isLoggedIn = false
-    var userName: String? = "GoF"
-    var password: String? = "1234"
+    private var login = false
+    private var userName: String? = "GoF"
+    private var password: String? = "1234"
     
     private init() {}
     
     func login(withUserName userName: String, password: String) {
         // 로그인 처리
         if self.userName == userName && self.password == password {
-            self.isLoggedIn = true
+            self.login = true
         } else {
-            self.isLoggedIn = false
+            self.login = false
         }
     }
     
     func logout() {
         // 로그아웃 처리
-        self.isLoggedIn = false
+        self.login = false
         self.userName = nil
         self.password = nil
+    }
+    
+    func isLoggedIn() -> Bool {
+        return login
     }
 }
