@@ -9,7 +9,7 @@ import UIKit
 
 class BridgeViewController: UIViewController {
     
-    var pen: Pen = Zebra(boldSize: 13, color: .red)
+    var pen: Pen? = nil
     @IBOutlet weak var penLabel: UILabel!
     @IBOutlet weak var paperTextView: UITextView!
     
@@ -18,20 +18,20 @@ class BridgeViewController: UIViewController {
     }
     
     @IBAction func textFieldChanged(_ sender: UITextField) {
-        paperTextView.text = sender.text
-        paperTextView.textColor = pen.color
-        paperTextView.font = pen.bold
+        pen?.write(text: sender.text ?? "", view: paperTextView)
     }
     
     @IBAction func zebraButtonDidTap(_ sender: Any) {
         penLabel.text = "pen : zebra"
         let random = CGFloat((1...20).randomElement()!)
-        pen = Zebra(boldSize: random, color: .red)
+        let ink = Color(bold: .systemFont(ofSize: random), color: .red)
+        pen = Zebra(ink: ink)
     }
     
     @IBAction func hiTecCButtonDidTap(_ sender: Any) {
         penLabel.text = "pen : Hi-Tec-C"
         let random = CGFloat((1...20).randomElement()!)
-        pen = HiTecC(boldSize: random, color: UIColor.tintColor)
+        let ink = Color(bold: .systemFont(ofSize: random), color: .blue)
+        pen = HiTecC(ink: ink)
     }
 }

@@ -9,16 +9,13 @@ import UIKit
 
 struct Zebra: Pen {
     
-    var bold: UIFont
-    var color: UIColor
+    private(set) var ink: Ink
     
-    init(boldSize: CGFloat, color: UIColor) {
-        self.bold = UIFont.boldSystemFont(ofSize: boldSize)
-        self.color = color
-    }
+    init(ink: Ink) { self.ink = ink }
     
-    func write(str: String) -> UILabel {
-        let label = UILabel()
-        return label
+    func write(text: String, view: UIView) {
+        if let textField = view as? UITextView { textField.text = text }
+        else if let label = view as? UILabel { label.text = text }
+        ink.apply(view: view)
     }
 }
