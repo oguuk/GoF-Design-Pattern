@@ -72,14 +72,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="menuCell" id="Ia6-Nf-Eta" customClass="MenuTableViewCell" customModule="GoF_Design_Pattern" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ia6-Nf-Eta" id="eQQ-9V-J8E">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmL-Ro-3hW">
-                                            <rect key="frame" x="20" y="11" width="42" height="21.5"/>
+                                            <rect key="frame" x="20" y="11" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -105,6 +105,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cUg-Gq-lMf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1641" y="-172"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iBz-L4-9nG">
+            <objects>
+                <viewController storyboardIdentifier="Singleton" id="VO0-lF-W3H" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5sr-2m-T5g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그인에 적용되어 있음." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iis-mv-kYu">
+                                <rect key="frame" x="10" y="437.5" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oq4-dp-UeK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iis-mv-kYu" firstAttribute="centerY" secondItem="5sr-2m-T5g" secondAttribute="centerY" id="6Cd-XN-a2n"/>
+                            <constraint firstItem="iis-mv-kYu" firstAttribute="centerX" secondItem="5sr-2m-T5g" secondAttribute="centerX" id="7vi-Rh-3ag"/>
+                            <constraint firstItem="iis-mv-kYu" firstAttribute="leading" secondItem="oq4-dp-UeK" secondAttribute="leading" constant="10" id="dO3-wY-UKL"/>
+                            <constraint firstItem="oq4-dp-UeK" firstAttribute="trailing" secondItem="iis-mv-kYu" secondAttribute="trailing" constant="10" id="lK3-uY-WQh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aEd-87-HKH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2120" y="638"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zzW-im-zjm">
+            <objects>
+                <viewController storyboardIdentifier="Factory Method" id="GXa-bv-ldG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pO6-3S-TNf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Observer Symbol생성에 적용되어 있음." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alD-F1-gan">
+                                <rect key="frame" x="10" y="437.5" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hxC-09-fnj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hxC-09-fnj" firstAttribute="trailing" secondItem="alD-F1-gan" secondAttribute="trailing" constant="10" id="QkZ-tW-dJe"/>
+                            <constraint firstItem="alD-F1-gan" firstAttribute="centerY" secondItem="pO6-3S-TNf" secondAttribute="centerY" id="b6Q-vX-xji"/>
+                            <constraint firstItem="alD-F1-gan" firstAttribute="centerX" secondItem="pO6-3S-TNf" secondAttribute="centerX" id="gLX-24-h8G"/>
+                            <constraint firstItem="alD-F1-gan" firstAttribute="leading" secondItem="hxC-09-fnj" secondAttribute="leading" constant="10" id="nsI-ts-mUk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hZ0-CD-kDO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1283" y="638"/>
         </scene>
         <!--Observer View Controller-->
         <scene sceneID="y1X-JQ-CtI">
@@ -855,7 +913,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="URL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRj-CJ-4TV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="URL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRj-CJ-4TV">
                                 <rect key="frame" x="20" y="618" width="32" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -882,6 +940,7 @@
                             <constraint firstItem="CcC-aZ-nKD" firstAttribute="leading" secondItem="BeG-YN-IG1" secondAttribute="leading" id="asf-P3-g3n"/>
                             <constraint firstItem="5A8-ca-Dmf" firstAttribute="top" secondItem="m3i-mf-YBe" secondAttribute="bottom" constant="10" id="bZR-cw-hse"/>
                             <constraint firstItem="BeG-YN-IG1" firstAttribute="trailing" secondItem="m3i-mf-YBe" secondAttribute="trailing" constant="20" id="dYe-b4-QBN"/>
+                            <constraint firstItem="iRj-CJ-4TV" firstAttribute="leading" secondItem="TBG-b8-hNE" secondAttribute="leadingMargin" id="mhB-rc-mu7"/>
                             <constraint firstItem="BeG-YN-IG1" firstAttribute="trailing" secondItem="5A8-ca-Dmf" secondAttribute="trailing" id="nhG-PG-u6V"/>
                         </constraints>
                     </view>
@@ -959,8 +1018,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFD-sD-fzd">
-                                <rect key="frame" x="186.5" y="438" width="41.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFD-sD-fzd">
+                                <rect key="frame" x="10" y="438" width="394" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -969,6 +1028,8 @@
                         <viewLayoutGuide key="safeArea" id="yma-6F-4PJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="yma-6F-4PJ" firstAttribute="trailing" secondItem="iFD-sD-fzd" secondAttribute="trailing" constant="10" id="08o-Xr-oiR"/>
+                            <constraint firstItem="iFD-sD-fzd" firstAttribute="leading" secondItem="yma-6F-4PJ" secondAttribute="leading" constant="10" id="TL4-18-A4B"/>
                             <constraint firstItem="iFD-sD-fzd" firstAttribute="centerX" secondItem="gnF-uC-TlV" secondAttribute="centerX" id="ghj-dL-1n3"/>
                             <constraint firstItem="iFD-sD-fzd" firstAttribute="centerY" secondItem="gnF-uC-TlV" secondAttribute="centerY" id="mmV-aW-uhj"/>
                         </constraints>
