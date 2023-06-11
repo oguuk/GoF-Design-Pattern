@@ -12,8 +12,8 @@ class MenuTableViewController: UITableViewController {
     let sections = ["👨🏻‍🎨Creational", "🧬Structural", "🤸🏻Behavioral"]
     
     let patterns = [
-        ["Singleton", "Factory Method", "Abstract Factory", "Builder", "Factory Method", "Prototype"],
-        ["Adapter", "Bridge", "Composite", "Facade", "Flyweight", "Protection Proxy", "Virtual Proxy"],
+        ["Singleton", "Factory Method", "Abstract Factory", "Builder", "Prototype"],
+        ["Adapter", "Bridge", "Composite", "Facade", "Flyweight"],
         ["Observer", "Chain of Responsibility", "Command", "Interpreter", "Iterator", "Mediator", "Memento", "State", "Strategy", "Template Method", "Visitor"]
     ]
     
