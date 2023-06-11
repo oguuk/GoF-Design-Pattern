@@ -17,7 +17,7 @@ class BaseViewController: UIViewController {
     }
     
     func configureUI() { // 공통 작업
-        view.backgroundColor = .systemBlue
+        view.backgroundColor = .white
     }
     
     func layout() { // 하위 클래스에서 구현
