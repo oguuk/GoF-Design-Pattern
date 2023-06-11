@@ -12,6 +12,6 @@ class TemplateViewController: BaseViewController {
     @IBOutlet weak var templateLabel: UILabel!
     
     override func layout() {
-        templateLabel.text = "This is Template Method.\n TemplateVC inherits from BaseVC."
+        templateLabel.text = "이 패턴은 모든 ViewController의 BaseViewController로 적용됨."
     }
 }
